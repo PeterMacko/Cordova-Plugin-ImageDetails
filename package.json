@@ -1,0 +1,12 @@
+{
+  "name": "cordova-plugin-imagedetails",
+  "version": "0.0.1",
+  "author": "Peter Macko",
+  "homepage": "http://project22.sk/",
+  "description": "Image Details",
+  "cordova": {
+    "platforms": [
+      "android"
+    ]
+  },
+}
