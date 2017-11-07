@@ -4,7 +4,9 @@ function ImageDetails() {
 ImageDetails.prototype.resolution = function(filePath, sucess, failure) {
 	var args = {};
 	args.filePath = filePath;
-	cordova.exec(sucess, failure, "ImageDetails", "resolution", [args]);
+	return new Promise((resolve,reject) => {
+		cordova.exec(resolve, reject, "ImageDetails", "resolution", [args]);
+	});
 }
 
 cordova.addConstructor(function()  {
