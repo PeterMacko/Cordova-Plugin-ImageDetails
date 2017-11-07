@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<plugin xmlns="http://www.phonegap.com/ns/plugins/1.0"
+        id="sk.project22.plugins.ImageDetails"
+        version="0.0.1">
+
+  <name>ImageDetails</name>
+
+  <engines>
+    <engine name="cordova" version=">=3.4.0"/>
+  </engines>
+
+  <asset src="www/image-details.js" target="js/image-details.js"/>
+
+  <js-module src="www/image-details.js" name="image-details">
+    <clobbers target="image-details" />
+  </js-module>
+
+  <platform name="android">
+
+    <config-file target="res/xml/config.xml" parent="/*">
+      <feature name="ImageDetails">
+        <param name="android-package" value="sk.project22.plugins.ImageDetails"/>
+      </feature>
+    </config-file>
+
+    <source-file src="src/android/ImageDetails.java" target-dir="src/sk/project22/plugins/"/>
+  </platform>
+
+</plugin>
