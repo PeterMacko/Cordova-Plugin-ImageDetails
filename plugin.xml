@@ -4,6 +4,9 @@
         version="0.0.1">
 
   <name>ImageDetails</name>
+  <description>get width and height of image</description>
+  <license>Apache 2.0</license>
+  <keywords>cordova,Image</keywords>
 
   <engines>
     <engine name="cordova" version=">=3.4.0"/>
@@ -11,8 +14,8 @@
 
   <asset src="www/image-details.js" target="js/image-details.js"/>
 
-  <js-module src="www/image-details.js" name="image-details">
-    <clobbers target="image-details" />
+  <js-module src="www/image-details.js" name="ImageDetails">
+    <clobbers target="nabigator.ImageDetails" />
   </js-module>
 
   <platform name="android">
