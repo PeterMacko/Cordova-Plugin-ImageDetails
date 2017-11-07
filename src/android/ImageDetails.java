@@ -4,8 +4,6 @@ import org.apache.cordova.*;
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
-import javax.imageio.IIOImage;
-import java.awt.image.BufferedImage;
 import java.io.File;
 import android.graphics.BitmapFactory;
 
@@ -20,7 +18,7 @@ public class ImageDetails extends CordovaPlugin {
       if (parameters != null) {
         BitmapFactory.Options bitMapOption=new BitmapFactory.Options();
         bitMapOption.inJustDecodeBounds=true;
-        BitmapFactory.decodeFile(parameters.getString("filePath"), bitMapOption);
+        BitmapFactory.decodeFile(parameters.getString("filePath").replace("file://", ""), bitMapOption);
 
         JSONObject r = new JSONObject();
         r.put("width", bitMapOption.outWidth);
