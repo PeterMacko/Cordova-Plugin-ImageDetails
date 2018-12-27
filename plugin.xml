@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <plugin xmlns="http://www.phonegap.com/ns/plugins/1.0"
         id="sk.project22.plugins.ImageDetails"
-        version="0.0.1">
+        version="0.0.3">
 
   <name>ImageDetails</name>
   <description>get width and height of image</description>
@@ -15,7 +15,7 @@
   <asset src="www/image-details.js" target="js/image-details.js"/>
 
   <js-module src="www/image-details.js" name="ImageDetails">
-    <clobbers target="nabigator.ImageDetails" />
+    <clobbers target="navigator.ImageDetails" />
   </js-module>
 
   <platform name="android">
