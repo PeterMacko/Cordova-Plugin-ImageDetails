@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <plugin xmlns="http://www.phonegap.com/ns/plugins/1.0"
-        id="sk.project22.plugins.ImageDetails"
-        version="0.0.4">
+        id="cordova-plugin-imagedetails"
+        version="0.0.5">
 
   <name>ImageDetails</name>
   <description>get width and height of image</description>
@@ -22,7 +22,7 @@
 
     <config-file target="res/xml/config.xml" parent="/*">
       <feature name="ImageDetails">
-        <param name="android-package" value="sk.project22.plugins.ImageDetails"/>
+        <param name="android-package" value="cordova-plugin-imagedetails"/>
       </feature>
     </config-file>
 
